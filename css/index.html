@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8" />
+        <title>CSS</title>
+		<link rel="stylesheet" type="text/css" href="../css_SMAB1.css" /> <!-- Pour tout le monde -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Aurélien Bouchet vous présente son cours de CSS3" />
+        <link rel="stylesheet" type="text/css" href="../prism.css" />
+        <script src="../prism.js"></script>
+        <script src="../spoiler.js"></script>
+	</head>
+
+	<body>
+        <header id="block_sommet">
+        	<nav>
+                <ul class="menu_style">
+                    <li class="agencement_menu"><a href="../ma-demarche/" class="lien_menu">Ma démarche</a></li>
+                    <li class="agencement_menu"><a href="../mes-projets/" class="lien_menu">Mes projets</a></li>
+                    <li class="agencement_menu"><a href="../html/" class="lien_menu">HTML</a></li>
+                    <li class="agencement_menu"><a href="../css/" class="lien_menu">CSS</a></li>
+                    <li class="agencement_menu"><a href="../php-mysql/" class="lien_menu">PHP & MySQL</a></li>
+                    <li class="agencement_menu"><a href="../certificats/" class="lien_menu">Certificats</a></li>
+                </ul>
+                <div><a href="../index.html"><img src="../data/icone_maison_modifie.png" title="Acceuil" alt="Icone_menu" class="img_menu_acceuil" /></a></div>
+            </nav>
+        </header>
+
+<!-- Cour css -->
+
+
+<div id="feuille_blanche">
+    <h1 class="agencement_titres">Css</h1>
+</div>
+<div class="feuille_blanche_suite">
+	<h2>Les polices</h2>
+	<h3>Déclarer une nouvelle police</h3>
+		<pre>@font-face
+{
+    font-family: 'MaSuperPolice';
+    src: url('MaSuperPolice.eot') format('eot'),
+    url('MaSuperPolice.woff') format('woff'),
+    url('MaSuperPolice.ttf') format('truetype'),
+    url('MaSuperPolice.svg') format('svg');
+}</pre>
+
+	<h3>Formats de fichiers de police à connaitre</h3>
+		<ul>
+    			<li><strong>.ttf</strong> : TrueType Font. Fonctionne sur IE9 et tous les autres navigateurs.</li>
+
+    			<li><strong>.eot</strong> : Embedded OpenType. Fonctionne sur Internet Explorer uniquement, toutes versions. Ce format est propriétaire, produit par Microsoft.</li>
+
+    			<li><strong>.otf</strong> : OpenType Font. Ne fonctionne pas sur Internet Explorer.</li>
+
+    			<li><strong>.svg</strong> : SVG Font. Le seul format reconnu sur les iPhone et iPad pour le moment.</li>
+
+    			<li><strong>.woff</strong> : Web Open Font Format. Nouveau format conçu pour le Web, qui fonctionne sur IE9 et tous les autres navigateurs.</li>
+			</ul>
+
+	<h3>Liste des polices qui fonctionnent sur la plupart des navigateurs</h3>
+		<ul>
+			<li id="Texte_en_Arial">Texte en Arial</li>
+			<li id="Texte_en_Arial_Black">Texte en Arial Black</li>
+			<li id="Texte_en_Comic_Sans_MS">Texte en Comic Sans MS</li>
+			<li id="Texte_en_Courier_New">Texte en Courier New</li>
+			<li id="Texte_en_Georgia">Texte en Georgia</li>
+			<li id="Texte_en_Impact">Texte en Impact</li>
+			<li id="Texte_en_Times_New_Roman">Texte en Times New Roman</li>
+			<li id="Texte_en_Trebuchet_MS">Texte en Trebuchet MS</li>
+			<li id="Texte_en_Verdana">Texte en Verdana</li>
+		</ul>
+	<p>Le site <a href="https://www.fontsquirrel.com/" target="_blank" rel="noopener">fontsquirrel.com</a> permet de télécharger gratuitement des polices libres de droit, et tous les fichiers CSS nécessaires.</p>
+</div>
+<div class="feuille_blanche_suite">
+	<h2>Les images</h2>
+	<h3>Les flottants</h3>
+    <img src="../data/bateau_flottant.jpg" id="bateau_flottant1" alt="bateau flottant" />
+<p>
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+</p>
+<p>Pour annuler la propriété <strong>float</strong> sur un texte, on utilise la propriété <strong>clear: both;</strong></p>
+<img src="../data/bateau_flottant.jpg" id="bateau_flottant2" alt="bateau flottant" />
+<p>
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+</p>
+<p class="texte_dessous_image">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<h3>Centrer une image non flottante</h3>
+<p>On applique la propriété <strong>text-align: center;</strong> à une balise <strong>div</strong> ou <strong>p</strong> contenant l'image :</p>
+<div class="image_centree"><img src="../data/logo_firefox.png" alt="logo firefox" /></div>
+
+<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
+  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
+    <div class="contenuSpoiler">
+      <pre><code class="language-markup">
+    &lt;h3&gt;Les flottants&lt;/h3&gt;
+    &lt;img src="../data/bateau_flottant.jpg" id="bateau_flottant1" alt="bateau flottant" /&gt;
+&lt;p&gt;
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ....etc.... est laborum."
+&lt;/p&gt;
+&lt;p&gt;Pour annuler la propriété &lt;span class="gras"&gt;float&lt;/span&gt; sur un texte, on utilise la propriété &lt;span class="gras"&gt;clear: both;&lt;/span&gt;&lt;/p&gt;
+&lt;img src="../data/bateau_flottant.jpg" id="bateau_flottant2" alt="bateau flottant" /&gt;
+&lt;p&gt;
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ....etc.... esse cillum dolore eu fugiat nulla pariatur."
+&lt;/p&gt;
+&lt;p class="texte_dessous_image"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+
+
+&lt;h3&gt;Centrer une image non flottante&lt;/h3&gt;
+&lt;p&gt;On applique la propriété &lt;span class="gras"&gt;text-align: center;&lt;/span&gt; à une balise &lt;span class="gras"&gt;div&lt;/span&gt; ou &lt;span class="gras"&gt;p&lt;/span&gt; contenant l'image :&lt;/p&gt;
+&lt;div class="image_centree"&gt;&lt;img src="../data/logo_firefox.png" /&gt;&lt;/div&gt;
+      </code></pre>
+    </div>
+</div>
+
+<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
+  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
+    <div class="contenuSpoiler">
+      <pre><code class="language-css">
+#bateau_flottant2
+{
+    float: left;
+}
+.texte_dessous_image
+{
+    clear: both;
+}
+
+
+.image_centree
+{
+    text-align: center;
+}
+      </code></pre>
+    </div>
+</div>
+
+</div>
+<div class="feuille_blanche_suite">
+	<h2>Le background</h2>
+	<h3>Background simple</h3>
+	<div id="soleil">
+        <p>
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+    </div>
+
+    <h3>Backgound complexe</h3>
+    <div id="mer_et_soleil">
+        <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+    </div>
+
+<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
+  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
+    <div class="contenuSpoiler">
+      <pre><code class="language-markup">
+    &lt;h2&gt;Le background&lt;/h2&gt;
+    &lt;h3&gt;Background simple&lt;/h3&gt;
+    &lt;div id="soleil"&gt;
+        &lt;p&gt;
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo ....etc.... deserunt mollit anim id est laborum."
+        &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;Backgound complexe&lt;/h3&gt;
+    &lt;div id="mer_et_soleil"&gt;
+        &lt;p&gt;
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ....etc....mollit anim id est laborum."
+        &lt;/p&gt;
+    &lt;/div&gt;
+      </code></pre>
+    </div>
+</div>
+
+<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
+  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
+    <div class="contenuSpoiler">
+      <pre><code class="language-css">
+#soleil
+{
+    background-image: url("data/soleil.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+#mer_et_soleil
+{
+    background: url("data/soleil.png") fixed no-repeat top center, url("data/mer_bleue.jpg");
+}
+      </code></pre>
+    </div>
+</div>
+
+
+</div>
+<div class="feuille_blanche_suite">
+    <h2>Les blocks</h2>
+    <h3>Le contenu</h3>
+        <p id="taille_block">
+            Pour un mot très long, par exemple une URL: <br />https://XXXXXXXXX/XXXXXXXXXXXX/XXXXXXXXXXXXXXXX/XXXXXXXXXXXXXXXXXXXXX/XXX_XXXXXXXXXXXXXXXXX - <span class="surligner_jaune">La césure sera forcée</span>, grâce à <strong>word-wrap: break-word;</strong> <br /> <br /> 
+            <strong>overflow: auto;</strong> met automatiquement en place un ascenseur si le texte est trop long : <br /><br />
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        </p>
+
+    <h3>Les bordures</h3>
+    <p>Les différents types de bordures :</p>
+        <img src="../data/types_bordures.png" alt="les types de bordures" />
+    <p><span id="bordures_arrondies">Bordures arrondies avec un fond</span></p><br />
+
+
+<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
+  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
+    <div class="contenuSpoiler">
+      <pre><code class="language-markup">
+    &lt;h3&gt;Le contenu&lt;/h3&gt;
+        &lt;p id="taille_block"&gt;
+            Pour un mot très long, par exemple une URL: &lt;br /&gt;https://XXXXXXXXX/XXXXXXXXXXXX/XXXXXXXXXXXXXXXX/XXXXXXXXXXXXXXXXXXXXX/XXX_XXXXXXXXXXXXXXXXX - &lt;span class="surligner_jaune"&gt;La césure sera forcée&lt;/span&gt;, grâce à &lt;span class="gras"&gt;word-wrap: break-word;&lt;/span&gt; &lt;br /&gt; &lt;br /&gt; 
+            &lt;span class="gras"&gt;overflow: auto;&lt;/span&gt; met automatiquement en place un ascenseur si le texte est trop long : &lt;br /&gt;&lt;br /&gt;
+            "Lorem ipsum dolor sit amet,....etc....reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        &lt;/p&gt;
+
+    &lt;h3&gt;Les bordures&lt;/h3&gt;
+    &lt;p&gt;Les différents types de bordures :&lt;/p&gt;
+        &lt;img src="../data/types_bordures.png" alt="les types de bordures" /&gt;
+    &lt;p&gt;&lt;span id="bordures_arrondies"&gt;Bordures arrondies avec un fond&lt;/span&gt;&lt;/p&gt;
+      </code></pre>
+    </div>
+</div>
+
+<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
+  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
+    <div class="contenuSpoiler">
+      <pre><code class="language-css">
+#taille_block
+{
+    width: auto; /* le block s'adapte à la largeur de l'écran */
+    min-width: 400px; /* le block ne doit pas faire moins de 400px de large */
+    max-width: 80%; /* la largeur du block ne doit pas excéder 60% de l'écran */
+    max-height: 150px;
+    text-align: justify;
+    overflow: auto; /* si le texte est trop long, mise en place auto d'un ascenseur */
+    word-wrap: break-word; /* césure forcée si un "mot (type url)" ne rentre pas dans la largeur du block */
+    padding: 12px; /*la marge intérieur*/
+    margin: auto; /* les marges extérieures s'adaptent à l'ecran et vont centrer le block */ 
+    border: double #FFA500 3px;
+}
+
+.surligner_jaune
+{
+    background-color: yellow;
+}
+
+#bordures_arrondies
+{
+    background-color: #FFA500;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+}
+      </code></pre>
+    </div>
+</div>
+
+
+</div>
+<div class="feuille_blanche_suite">
+    <h2>Les ombres</h2>
+    <h3>Externe</h3>
+    <p><span id="ombre_externe">Exemple d'ombre externe</span></p>
+    <h3>Interne</h3>
+    <p><span id="ombre_interne">Exemple d'ombre interne</span></p>
+    <h3>Sur un texte</h3>
+    <p id="ombre_texte">Grâce à la propriété <strong>box-shadow</strong> ou <strong>text-shadow</strong>, on peut mettre de l'ombre sur les blocks ou le texte, avec comme attributs le décalage X, puis Y, l'adoucissement de l'ombre, la couleur et enfin inset si on la veut en interne.</p>
+
+
+<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
+  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
+    <div class="contenuSpoiler">
+      <pre><code class="language-markup">
+&lt;h3&gt;Externe&lt;/h3&gt;
+&lt;p&gt;&lt;span id="ombre_externe"&gt;Exemple d'ombre externe&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;Interne&lt;/h3&gt;
+&lt;p&gt;&lt;span id="ombre_interne"&gt;Exemple d'ombre interne&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;Sur un texte&lt;/h3&gt;
+&lt;p id="ombre_texte"&gt;Grâce à la prorpiété &lt;span class="gras"&gt;box-shadow&lt;/span&gt; ou &lt;span class="gras"&gt;text-shadow&lt;/span&gt;, on peut mettre de l'ombre sur les blocks ou le texte, avec comme attributs le décalage X, puis Y, l'adoucissement de l'ombre, la couleur et enfin inset si on la veut en interne.&lt;/p&gt;
+      </code></pre>
+    </div>
+</div>
+
+<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
+  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
+    <div class="contenuSpoiler">
+      <pre><code class="language-css">
+#ombre_externe
+{
+    background-color: #FFA500;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    box-shadow: 3px 5px 3px black;
+}
+#ombre_interne
+{
+    background-color: #FFA500;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    box-shadow: 3px 5px 3px black inset;
+}
+#ombre_texte
+{
+    text-shadow: 1.5px 1.5px 4px black;
+    font-size: 200%;
+}
+      </code></pre>
+    </div>
+</div>
+
+
+</div>
+<div class="feuille_blanche_suite">
+    <h2>Les pseudo-formats</h2>
+    <h3>Le pseudo-format :hover</h3>
+    <p><span id="hover">Il permet par exemple de changer l'apparence de ce texte quand la souris le survole.</span></p>
+
+    <h3>Le pseudo-format :active</h3>
+    <p>Il permet de donner une apparence différente au moment de l'activation. Il est souvent utilisé pour les liens, pour fournir un feedback à l'utilisateur lui indiquant que son action est bien prise en compte.</p>
+    <p><strong><span id="clic">Maintenez un clic gauche sur ce paragraphe pour voir un exemple de l'effet.</span></strong></p>
+    <p>Il est souvent utilisé avec le pseudo-format <strong>:visited</strong>, qui permet de modifier l'apparence d'un élément qui à déja été activé.</p>
+
+    <h3>Le pseudo-format :focus</h3>
+    <p>Il permet de modifier l'apparence d'un élément sélectionné. Cliquez dans la zone de saisie du prénom :</p>
+    <p><strong>Prénom : </strong><input id="focus_cellule"></p>
+
+<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
+  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
+    <div class="contenuSpoiler">
+      <pre><code class="language-markup">
+&lt;h3&gt;Le pseudo-format :hover&lt;/h3&gt;
+&lt;p&gt;&lt;span id="hover"&gt;Il permet par exemple de changer l'apparence de ce texte quand la souris le survole.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Le pseudo-format :active&lt;/h3&gt;
+&lt;p&gt;Il permet de donner une apparence différente au moment de l'activation. Il est souvent utilisé pour les liens, pour fournir un feedback à l'utilisateur lui indiquant que son action est bien prise en compte.&lt;/p&gt;
+&lt;p&gt;&lt;span class="gras"&gt;&lt;span id="clic"&gt;Maintenez un clic gauche sur ce paragraphe pour voir un exemple de l'effet.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Il est souvent utilisé avec le pseudo-format &lt;span class="gras"&gt;:visited&lt;/span&gt;, qui permet de modifier l'apparence d'un élément qui à déja été activé.&lt;/p&gt;
+
+&lt;h3&gt;Le pseudo-format :focus&lt;/h3&gt;
+&lt;p&gt;Il permet de modifier l'apparence d'un élément sélectionné. Cliquez dans la zone de saisie du prénom :&lt;/p&gt;
+&lt;p&gt;&lt;span class="gras"&gt;Prénom : &lt;/span&gt;&lt;input id="focus_cellule"&gt;&lt;/p&gt;
+      </code></pre>
+    </div>
+</div>
+
+<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
+  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
+    <div class="contenuSpoiler">
+      <pre><code class="language-css">
+#hover:hover
+{
+    background-color: #FFA500;
+    color: white;
+}
+#clic:active
+{
+    color: #FFA500;
+    font-size: 200%;
+}
+#focus_cellule:focus
+{
+    background-color: #FFA500;
+}
+      </code></pre>
+    </div>
+</div>
+
+</div>
+
+<div class="feuille_blanche_suite">
+    <h2>Mises en pages</h2>
+    <h3>Flexbox</h3>
+    <p>Flexbox sert à la mise en page d'un site en utilisant des blocks remplissables et agençables.<br /><br /> Exemple :</p>
+    <div id="conteneur">
+        <div class="element" id="element1">Elément 1</div>
+        <div class="element" id="element2">Elément 2</div>
+        <div class="element" id="element3">Elément 3</div>
+    </div>
+    <p><a href="../data/cours_Flexbox/cours_Flexbox.html" target="_blank" rel="noopener"><span class="bouton_cliquable"><strong>Cliquez pour un exemple d'agencement avec Flexbox</strong></span></a></p><br />
+
+    <h3>Media Queries</h3>
+    <p>Media Queries sert à adapter son site en responsive design. Autrement dit à adapter l'agencement du site en fonction des supports utilisés pour le consulter et ainsi faciliter son utilisation.</p>
+    <p><a href="../data/cours_Media_Queries/cours_media_queries.html" target="_blank" rel="noopener"><span class="bouton_cliquable"><strong>Cliquez pour un exemple d'agencement avec Media Queries</strong></span></a></p><br />
+
+
+<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
+  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
+    <div class="contenuSpoiler">
+      <pre><code class="language-markup">
+    &lt;h3&gt;Flexbox&lt;/h3&gt;
+    &lt;p&gt;Flexbox sert à la mise en page d'un site en utilisant des blocks remplissables et agençables.&lt;br /&gt;&lt;br /&gt; Exemple :&lt;/p&gt;
+    &lt;div id="conteneur"&gt;
+        &lt;div class="element" id="element1"&gt;Elément 1&lt;/div&gt;
+        &lt;div class="element" id="element2"&gt;Elément 2&lt;/div&gt;
+        &lt;div class="element" id="element3"&gt;Elément 3&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p&gt;&lt;a href="../data/cours_Flexbox/cours_Flexbox.html" target="_blank" rel="noopener"&gt;&lt;span class="bouton_cliquable"&gt;&lt;span class="gras"&gt;Cliquez pour un exemple d'agencement avec Flexbox&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+    &lt;h3&gt;Media Queries&lt;/h3&gt;
+    &lt;p&gt;Media Queries sert à adapter son site en responsive design. Autrement dit à adapter l'agencement du site en fonction des supports utilisés pour le consulter et ainsi faciliter son utilisation.&lt;/p&gt;
+    &lt;p&gt;&lt;a href="../data/cours_Media_Queries/cours_media_queries.html" target="_blank" rel="noopener"&gt;&lt;span class="bouton_cliquable"&gt;&lt;span class="gras"&gt;Cliquez pour un exemple d'agencement avec Media Queries&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+      </code></pre>
+    </div>
+</div>
+
+<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
+  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
+    <div class="contenuSpoiler">
+      <pre><code class="language-css">
+/* Flexbox */
+#conteneur
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* si, en rétrécissant l'écran, les éléments ne rentrent plus en gardant leur taille minimale, alors ils passent sur plusieurs lignes */
+}
+.element
+{
+    min-width: 200px;
+    height: 50px;
+    margin: 5px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+#element1
+{
+    background-color: red;
+    flex: 1;
+}
+#element2
+{
+    background-color: green;
+    flex: 1;
+}
+#element3
+{
+    background-color: blue;
+    flex: 1;
+}
+
+/* Boutons */
+.bouton_cliquable
+{
+    background-color: #FFA500;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    box-shadow: 3px 5px 3px black;
+}
+.bouton_cliquable:hover
+{
+    text-decoration: underline;
+}
+.bouton_cliquable:active
+{
+    box-shadow: 3px 5px 3px black inset;
+}
+      </code></pre>
+    </div>
+</div>
+
+
+</div>
+
+
+
+	</body>
+
+</html>
