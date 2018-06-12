@@ -3,629 +3,87 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>HTML</title>
-		<link rel="stylesheet" type="text/css" href="../css_SMAB1.css" /> <!-- Pour tout le monde -->
+		<title>Site MMI Aurélien Bouchet</title>
+		<link rel="stylesheet" type="text/css" href="css_SMAB1.css" /> <!-- Pour tout le monde -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="Description" content="Aurélien Bouchet vous présente son cours de HTML5" />
-		<link rel="stylesheet" type="text/css" href="../prism.css" />
-        <script src="../prism.js"></script>
-        <script src="../spoiler.js"></script>
+		<meta name="Description" content="Aurélien Bouchet vous présente son projet de devenir UX-Designer" />
 	</head>
 
-	<body>
+	<body id="background_landing_page">
         <header id="block_sommet">
         	<nav>
-        	    <ul class="menu_style">
-        	    	<li class="agencement_menu"><a href="../ma-demarche/" class="lien_menu">Ma démarche</a></li>
-        	    	<li class="agencement_menu"><a href="../mes-projets/" class="lien_menu">Mes projets</a></li>
-        			<li class="agencement_menu"><a href="../html/" class="lien_menu">HTML</a></li>
-        			<li class="agencement_menu"><a href="../css/" class="lien_menu">CSS</a></li>
-        			<li class="agencement_menu"><a href="../php-mysql/" class="lien_menu">PHP & MySQL</a></li>
-        			<li class="agencement_menu"><a href="../certificats/" class="lien_menu">Certificats</a></li>
+        		<ul class="menu_style">
+        			<li class="agencement_menu"><a href="ma-demarche/" class="lien_menu">Ma démarche</a></li>
+        			<li class="agencement_menu"><a href="mes-projets/" class="lien_menu">Mes projets</a></li>
+        			<li class="agencement_menu"><a href="html/" class="lien_menu">HTML</a></li>
+        			<li class="agencement_menu"><a href="css/" class="lien_menu">CSS</a></li>
+        			<li class="agencement_menu"><a href="php-mysql/" class="lien_menu">PHP & MySQL</a></li>
+        			<li class="agencement_menu"><a href="certificats/" class="lien_menu">Certificats</a></li>
         		</ul>
-        		<div><a href="../index.html"><img src="../data/icone_maison_modifie.png" title="Acceuil" alt="Icone_menu" class="img_menu_acceuil" /></a></div>
+        		<div><a href="index.html"><img src="data/icone_maison_modifie.png" title="Accueil" alt="Icone_menu" class="img_menu_acceuil" /></a></div>
         	</nav>
         </header>
 
-<!-- Cour html -->
-<div id="debut_page"></div>
-<div id="feuille_blanche">
-    <h1 class="agencement_titres">Html</h1>
+<!-- CV -->
+<div id="landingPage">
+<div id="landing_block1">
+<h1 id="titre_landing_page">Ma volonté d'intégrer MMI Bordeaux est le fruit d'une réflexion approfondie.</h1>
+<p>
+    <strong>Convaincu de pouvoir m’épanouir dans ce métier, je me devais d’en acquérir la certitude par des recherches détaillées.</strong>
+</p>
+<p><strong>J’ai donc effectué le travail suivant :</strong></p>
+
+<ul>
+    <li>Etude prospective du marché du travail</li>
+    <li>Etude détaillée du métier d’UX-Designer</li>
+    <li>Aptitudes et qualités requises</li>
+    <li>Bilan avec un coach spécialisé pour vérifier si ma personnalité est en adéquation avec mon projet</li>
+    <li>Entretien avec des professionnels et des anciens élèves de MMI</li>
+    <li>Journée portes ouvertes MMI</li>
+    <li>Mise en pratique en suivant les cours Openclassrooms d'UX design, HTML, CSS et PHP, pour concrètement  mettre à l’épreuve :
+        <ol>
+            <li>mon envie d'exercer le métier d'UX Designer</li>
+            <li>ma capacité à entreprendre ces études</li>
+            <li>mon engagement et ma motivation</li>
+        </ol>
+
+    </li>
+</ul>
 </div>
-<div class="feuille_blanche_suite">
-    <h2>Les liens</h2>
-    <h3>Liens externe simple</h3>
-    <p>Lien vers le site de <a href="http://www.mmibordeaux.com">MMI</a> par exemple.</p>
-
-    <h3>Liens externe avec options</h3>
-    <p>Lien vers le site d'<a href="https://openclassrooms.com" title="OpenClassrooms" target="_blank" rel="noopener">OpenClassrooms</a> avec infobulle et ouverture forcée dans un nouvel onglet.</p>
-
-    <h3>Liens interne vers une ancre</h3>
-    <p>Lien vers une ancre en fin de page : <a href="#fin_page">Fin de page</a>.</p>
-
-    <h3>Lien vers un mail</h3>
-    <p>Pour envoyer un email à l'adresse <a href="mailto:aursmj@gmail.com">aursmj@gmail.com</a>.</p> 
-
-    <h3>Lien de téléchargement</h3>
-    <p>Pour télécharger un <a href="../data/fichier_test_SMAB.odt">fichier test</a>, il suffit d'utiliser un lien.</p>
-
-
-<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
-  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
-    <div class="contenuSpoiler">
-      <pre><code class="language-markup">
-&lt;h3&gt;Liens externe simple&lt;/h3&gt;
-&lt;p&gt;Lien vers le site de &lt;a href="http://www.mmibordeaux.com"&gt;MMI&lt;/a&gt; par exemple.&lt;/p&gt;
-
-&lt;h3&gt;Liens externe avec options&lt;/h3&gt;
-&lt;p&gt;Lien vers le site d'&lt;a href="https://openclassrooms.com" title="OpenClassrooms" target="_blank" rel="noopener"&gt;OpenClassrooms&lt;/a&gt; avec infobulle et ouverture forcée dans un nouvel onglet.&lt;/p&gt;
-
-&lt;h3&gt;Liens interne vers une ancre&lt;/h3&gt;
-&lt;p&gt;Lien vers une ancre en fin de page : &lt;a href="#fin_page"&gt;Fin de page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;Lien vers un mail&lt;/h3&gt;
-&lt;p&gt;Pour envoyer un email à l'adresse &lt;a href="mailto:aursmj@gmail.com"&gt;aursmj@gmail.com&lt;/a&gt;.&lt;/p&gt; 
-
-&lt;h3&gt;Lien de téléchargement&lt;/h3&gt;
-&lt;p&gt;Pour télécharger un &lt;a href="../data/fichier_test_SMAB.odt"&gt;fichier test&lt;/a&gt;, il suffit d'utiliser un lien.&lt;/p&gt;
-      </code></pre>
-    </div>
+<div class="landing_block_suite">
+    <p><strong>Qui suis-je ?</strong></p>
+    <ul>
+    	<li>Aurélien Bouchet</li>
+    	<li>Un étudiant ayant découvert un domaine passionnant : l'UX Design. C'est pourquoi je vous présente ici mon projet pour intégrer la formation de MMI</li>
+    	<li>Contact : <a href="mailto:aursmj@gmail.com">aursmj@gmail.com</a></li>
+    </ul>
 </div>
-
-
+<div class="landing_block_suite">
+<p><strong>Dans cette présentation, vous découvrirez :</strong></p>
+<ul>
+    <li><a href="ma-demarche/">Des détails de ma démarche</a></li>
+    <li><a href="mes-projets">Mes projets</a></li>
+    <li><a href="certificats/">Les certificats d’apprentissage que j’ai obtenus</a></li>
+    <li>Une mise en pratique de mes cours par la réalisation de ce site et des extraits des fiches de cours que j’ai réalisées (<a href="html/">HTML</a>, <a href="css/">CSS</a>, <a href="php-mysql/">PHP</a>)</li>
+</ul>
 </div>
-<div class="feuille_blanche_suite">
-    <h2>Les images</h2>
-    <h3>La balise et ses attributs</h3>
-    <p>Une image doit être accompagnée de deux attributs :</p>
-    	<ul>
-    		<li>src : l'emplacement du fichier source.</li>
-    		<li>alt : un texte alternatif si l'image n'apparait pas.</li>
-    	</ul>
-    	<p>exemple d'image : <img src="../data/logo-mmi_mini.png" alt="mini logo mmi" class="cadre_image_mmi" /> </p>
-
-    <h3>Image miniature vers la version taille réelle</h3>
-    <p>Cliquez sur l'image pour l'agrandir. <br /><br />
-    Exemple : <a href="../data/logo-mmi.png" title="Cliquez pour agrandir"><img src="../data/logo-mmi_mini.png" alt="logo mmi" class="cadre_image_mmi" /></a></p>
-
-    <h3>Les figures</h3>
-    <p>Ce type d'image sert à illustrer les propos d'un texte. Elle doit se trouver entre les balises [figure] pour que les robots de google comprennent. La légende de cette image doit se trouver entre les balises [figcaption].<br />
-    Exemple :</p>
-    <figure>
-	    <img src="../data/logo_chrome.png" alt="logo de chrome" />
-	    <figcaption>Le logo de Chrome</figcaption>
-    </figure>
-
-<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
-  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
-    <div class="contenuSpoiler">
-      <pre><code class="language-markup">
-&lt;h3&gt;La balise et ses attributs&lt;/h3&gt;
-&lt;p&gt;Une image doit être accompagnée de deux attributs :
-	&lt;ul&gt;
-		&lt;li&gt;src : l'emplacement du fichier source.&lt;/li&gt;
-		&lt;li&gt;alt : un texte alternatif si l'image n'apparait pas.&lt;/li&gt;
-	&lt;/ul&gt;
-	exemple d'image : &lt;img src="../data/logo-mmi_mini.png" alt="mini logo mmi" /&gt; 
-&lt;/p&gt;
-
-&lt;h3&gt;Image miniature vers la version taille réelle&lt;/h3&gt;
-&lt;p&gt;Il suffit de faire un lien vers l'image en taille réelle, avec l'image miniature à la place de la partie cliquable du lien. &lt;br /&gt;&lt;br /&gt;
-Exemple : &lt;a href="../data/logo-mmi.png" title="Cliquez pour agrandir"&gt;&lt;img src="../data/logo-mmi_mini.png"&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3&gt;Les figures&lt;/h3&gt;
-&lt;p&gt;Ce type d'image sert à illustrer les propos d'un texte. Elle doit se trouver entre les balise [figure] pour que les robots de google comprennent. La légende de cette image doit se trouver entre les balises [figcaption].&lt;br /&gt;
-Exemple :
-&lt;figure&gt;
-    &lt;img src="../data/logo_chrome.png" alt="logo de chrome" /&gt;
-    &lt;figcaption&gt;Le logo de Chrome&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/p&gt;
-      </code></pre>
-    </div>
+<div class="landing_block_suite">
+	<p><strong>Pistes de réflexion pour améliorer ce site :</strong></p>
+	<ul>
+        <li>Tout site doit adopter un design « mobile first »: Pour satisfaire les utilisateurs qui consultent en grande majorité les sites sur un mobile, et pour coller aux nouveaux critères de Google qui anticipe une accélération du phénomène</li>
+        <li>Ce site devrait donc être responsive, par exemple grâce à l’utilisation des Media Queries</li>
+        <li>Il faudrait gérer la compatibilité des fonctionnalités HTML, CSS ou Javascript, avec les différentes versions des nombreux navigateurs Internet, en utilisant notamment le site <a href="https://caniuse.com">CanIUse</a> par exemple</li>
+        <li>Il serait nécessaire de travailler sur les notions d’accessibilité</li>
+        <li>Bien qu’ayant sollicité des avis dans mon entourage, je dois apprendre à mettre en oeuvre de véritables tests utilisateurs (utilisation du tableau d'usabilité de Jakob Nielsen et bien d’autres notions qui me seront accessibles en intégrant la formation MMI)</li>
+        <li>J’aurais pu utiliser un CMS, tel que WordPress ou Drupal, mais j’ai choisi de coder ce site directement, pour m’initier aux bases du développement web, et tester mes capacités et mon appétence pour l’apprentissage des langages (j’ai néanmoins prévu de suivre prochainement les cours d’OpenClassrooms sur WordPress)</li>
+        <li>Il manque également une stratégie de communication pour accompagner le lancement d’un projet. Je pense notamment à l’utilisation des réseaux sociaux comme Facebook, Twitter, Pinterest, Instagram, YouTube</li>
+        <li>S'informer sur la législation du droit à l'image</li>
+    </ul>
+    <p>Il y a bien sûr de nombreux autres points que je n'ai pas évoqués car je n'ai pas encore conscience qu'ils existent. Je suis donc impatient de bénéficier des enseignements de MMI, pour apprendre à concevoir des sites qui répondent mieux aux standards et aux usages du web actuel et de demain, et savoir les intégrer dans un écosystème complet</p>
+	
+</div>
 </div>
 
-</div>
-<div class="feuille_blanche_suite">
-	<h2>Les tableaux</h2>
-	<h3>Gestion des bordures des cellules</h3>
-	<p>Pas besoin d'intégrer les tableaux dans un paragraphe.</p>
-
-	<table id="tableau_html1">
-
-	<caption>Titre du tableau</caption>
-	<thead> <!-- En-tête du tableau -->
-		<tr>
-			<th>Titre de colonne 1</th> <th>Titre de colonne 2</th> <th>Titre de colonne 3</th> <th>Titre de colonne 4</th>
-		</tr>
-	</thead>
-	<tfoot> <!-- Pied de tableau -->
-		<tr>
-			<th>Titre de colonne 1</th> <th>Titre de colonne 2</th> <th>Titre de colonne 3</th> <th>Titre de colonne 4</th>
-		</tr>
-	</tfoot>
-	<tbody>
-		<tr>
-			<td>cellule</td> <td>cellule</td> <td>cellule</td> <td>cellule</td>
-		</tr>
-		<tr>
-			<td>cellule</td> <td>cellule</td> <td>cellule</td> <td>cellule</td>
-		</tr>
-		<tr>
-			<td>cellule</td> <td>cellule</td> <td>cellule</td> <td>cellule</td>
-		</tr>
-		<tr>
-			<td>cellule</td> <td>cellule</td> <td>cellule</td> <td>cellule</td>
-		</tr>
-	</tbody>
-
-</table>
-
-<h3>Gestion de la fusion de cellules - bordures collées</h3>
-
-<table id="tableau_html2">
-
-	<caption>Titre du tableau</caption>
-	<thead> <!-- En-tête du tableau -->
-		<tr>
-			<th>Titre de colonne 1</th> <th>Titre de colonne 2</th> <th>Titre de colonne 3</th> <th>Titre de colonne 4</th>
-		</tr>
-	</thead>
-	<tfoot> <!-- Pied de tableau -->
-		<tr>
-			<th>Titre de colonne 1</th> <th>Titre de colonne 2</th> <th>Titre de colonne 3</th> <th>Titre de colonne 4</th>
-		</tr>
-	</tfoot>
-	<tbody>
-		<tr>
-			<td>cellule L1-C1</td> <td rowspan="2">lignes fusionnées</td> <td>cellule L1-C3</td> <td>cellule L1-C4</td>
-		</tr>
-		<tr>
-			<td>cellule L2-C1</td> <td>cellule L2-C3</td> <td>cellule L2-C4</td>
-		</tr>
-		<tr>
-			<td>cellule L3-C1</td> <td>cellule L3-C2</td> <td>cellule L3-C3</td> <td>cellule L3-C4</td>
-		</tr>
-		<tr>
-			<td>cellule L4-C1</td> <td>cellule L4-C2</td> <td colspan="2">colonnes fusionnées</td>
-		</tr>
-	</tbody>
-
-</table>
-<br />
-
-<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
-  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
-    <div class="contenuSpoiler">
-      <pre><code class="language-markup">
-&lt;h3&gt;Gestion des bordures des cellules&lt;/h3&gt;
-&lt;p&gt;Pas besoin d'intégrer les tableaux dans un paragraphe.&lt;/p&gt;
-
-&lt;table id="tableau_html1"&gt;
-
-&lt;caption&gt;Titre du tableau&lt;/caption&gt;
-&lt;thead&gt; &lt;!-- En-tête du tableau --&gt;
-	&lt;tr&gt;
-		&lt;th&gt;Titre de colonne 1&lt;/th&gt; &lt;th&gt;Titre de colonne 2&lt;/th&gt; &lt;th&gt;Titre de colonne 3&lt;/th&gt; &lt;th&gt;Titre de colonne 4&lt;/th&gt;
-	&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tfoot&gt; &lt;!-- Pied de tableau --&gt;
-	&lt;tr&gt;
-		&lt;th&gt;Titre de colonne 1&lt;/th&gt; &lt;th&gt;Titre de colonne 2&lt;/th&gt; &lt;th&gt;Titre de colonne 3&lt;/th&gt; &lt;th&gt;Titre de colonne 4&lt;/th&gt;
-	&lt;/tr&gt;
-&lt;/tfoot&gt;
-&lt;tbody&gt;
-	&lt;tr&gt;
-		&lt;td&gt;cellule&lt;/td&gt; &lt;td&gt;cellule&lt;/td&gt; &lt;td&gt;cellule&lt;/td&gt; &lt;td&gt;cellule&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td&gt;cellule&lt;/td&gt; &lt;td&gt;cellule&lt;/td&gt; &lt;td&gt;cellule&lt;/td&gt; &lt;td&gt;cellule&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td&gt;cellule&lt;/td&gt; &lt;td&gt;cellule&lt;/td&gt; &lt;td&gt;cellule&lt;/td&gt; &lt;td&gt;cellule&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td&gt;cellule&lt;/td&gt; &lt;td&gt;cellule&lt;/td&gt; &lt;td&gt;cellule&lt;/td&gt; &lt;td&gt;cellule&lt;/td&gt;
-	&lt;/tr&gt;
-&lt;/tbody&gt;
-
-&lt;/table&gt;
-
-&lt;h3&gt;Gestion de la fusion de cellules - bordures collées&lt;/h3&gt;
-
-&lt;table id="tableau_html2"&gt;
-
-&lt;caption&gt;Titre du tableau&lt;/caption&gt;
-&lt;thead&gt; &lt;!-- En-tête du tableau --&gt;
-	&lt;tr&gt;
-		&lt;th&gt;Titre de colonne 1&lt;/th&gt; &lt;th&gt;Titre de colonne 2&lt;/th&gt; &lt;th&gt;Titre de colonne 3&lt;/th&gt; &lt;th&gt;Titre de colonne 4&lt;/th&gt;
-	&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tfoot&gt; &lt;!-- Pied de tableau --&gt;
-	&lt;tr&gt;
-		&lt;th&gt;Titre de colonne 1&lt;/th&gt; &lt;th&gt;Titre de colonne 2&lt;/th&gt; &lt;th&gt;Titre de colonne 3&lt;/th&gt; &lt;th&gt;Titre de colonne 4&lt;/th&gt;
-	&lt;/tr&gt;
-&lt;/tfoot&gt;
-&lt;tbody&gt;
-	&lt;tr&gt;
-		&lt;td&gt;cellule L1-C1&lt;/td&gt; &lt;td rowspan="2"&gt;lignes fusionnées&lt;/td&gt; &lt;td&gt;cellule L1-C3&lt;/td&gt; &lt;td&gt;cellule L1-C4&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td&gt;cellule L2-C1&lt;/td&gt; &lt;td&gt;cellule L2-C3&lt;/td&gt; &lt;td&gt;cellule L2-C4&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td&gt;cellule L3-C1&lt;/td&gt; &lt;td&gt;cellule L3-C2&lt;/td&gt; &lt;td&gt;cellule L3-C3&lt;/td&gt; &lt;td&gt;cellule L3-C4&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td&gt;cellule L4-C1&lt;/td&gt; &lt;td&gt;cellule L4-C2&lt;/td&gt; &lt;td colspan="2"&gt;colonnes fusionnées&lt;/td&gt;
-	&lt;/tr&gt;
-&lt;/tbody&gt;
-
-&lt;/table&gt;
-      </code></pre>
-    </div>
-</div>
-
-</div>
-<div class="feuille_blanche_suite">
-	<h2>Les formulaires</h2>
-	<h3>Formulaires classiques</h3>
-		<ul>
-			<li>Le "id" de "input" est relié au "for" du "label".</li>
-		    <li>le "name" de "input" est destiné à un language comme le PHP.</li>
-	    </ul>
-	    <p>Exemple :</p>
-	<form method="post" action="traitement.php">
-	<p>Si la saisie ne correspond pas au format indiqué dans l'input avec "type", le navigateur le signale et bloque l'envoi du formulaire.<br /><br />
-	La balise "fieldset" permet de regrouper les champs et la balise "legend" de donner un titre à ces regroupements.</p>
-		<fieldset>
-			<legend>Vos coordonnées</legend>
-
-        <label for="pseudo">Votre pseudo :</label><br />
-        <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" />
-       
-        <br />
-        <label for="pass">Votre mot de passe :</label><br />
-        <input type="password" name="pass" id="pass" placeholder="Votre MdP"/>
-
-        <br />
-        <label for="email">Votre email :</label><br />
-        <input type="email" name="email" id="email" placeholder="aursmj@gmail.com">
-
-        <br />
-        <label for="url">Votre site web :</label><br />
-		<input type="url" name="url" id="url" placeholder="SMAB.fr" >
-
-		<br />
-		<label for="tel">Votre numéro :</label><br />
-		<input type="tel" name="tel" id="tel" placeholder="0601020304">
-
-		</fieldset>
-
-		<br />
-		<label for="search">Rechercher :</label><br />
-		<input type="search" name="search" id="search" />
-
-		<br />
-		<p>L'attribut required, rend la saisie obligatoire et l'attribut autofocus pour y positionner le curseur dès l'ouverture de la page.</p>
-    </form>
-
-    <h3>Formulaires spéciaux</h3>
-    <form method="post" action="traitement.php">
-    	<p>
-    	    <label for="prez">Présentez-vous brièvement :</label><br />
-		    <textarea name="prez" id="prez" rows="10" cols="50" placeholder="Les attributs rows et cols définissent la taille de la zone de saisie par défaut"></textarea>
-
-		    <br />
-		    <label for="number">Choisir un nombre pair entre 10 et 20 :</label><br />
-		    <input type="number" name="number" id="number" min="10" max="20" step="2" />
-
-		    <br />
-		    <label for="range">Déplacez le curseur :</label>
-		    <input type="range" name="range" id="range" class="style_input" />
-
-		    <br />
-		    <label for="color">Choisissez une couleur :</label>
-		    <input type="color" name="color" id="color" class="style_input" />
-        </p>
-    </form>
-    
-    <h3>Formulaires dates et horaires</h3>
-    <form method="post" action="traitement.php">
-    	
-    	<div>
-    	<fieldset>
-    		<legend>Date & time</legend>
-
-    		<label for="date">date</label>
-		    <input type="date" name="date" id="date" />
-
-            <br /><br />
-		    <label for="time">time</label>
-		    <input type="time" name="time" id="time" />
-
-            <br /><br />
-		    <label for="week">week</label>
-		    <input type="week" name="week" id="week" />
-
-            <br /><br />
-	    	<label for="month">month</label>
-		    <input type="month" name="month" id="month" />
-
-            <br /><br />
-		    <label for="datetime">datetime</label>
-		    <input type="datetime" name="datetime" id="datetime" />
-
-            <br /><br />
-		    <label for="datetime-local">datetime-local</label>
-		    <input type="datetime-local" name="datetime-local" id="datetime-local" />
-		</fieldset>
-	    </div>
-	    
-    </form>
-
-    <h3>Les questionnaires</h3>
-    <form method="post" action="traitement.php">
-    	<p>
-    	<span>Zones d'options, un seul choix possible :</span><br /><br />
-    	Votre univers préféré :<br />
-        <input type="radio" name="univers" value="SW" id="SW" checked /> <label for="SW">Star Wars</label> . . . . . . . (En rajoutant l'attribut checked, la case est pré-cochée. Cet attribut n'a pas besoin de valeur.)<br />
-        <input type="radio" name="univers" value="HP" id="HP" /> <label for="HP">Harry Potter</label> <br />
-        <input type="radio" name="univers" value="LotR" id="LotR" /> <label for="LotR">Lord of the Ring</label> <br />
-        <input type="radio" name="univers" value="Ma" id="Ma" /> <label for="Ma">Marvel</label>
-    	</p>
-
-    	<p>
-    	<span>Cases à cocher, plusieurs choix possibles :</span><br /><br />
-    	Vos épisodes préférés :<br />
-	    <input type="checkbox" name="ep1" id="ep1" /> <label for="ep1">Episode 1</label><br />
-	    <input type="checkbox" name="ep2" id="ep2" /> <label for="ep2">Episode 2</label><br />
-	    <input type="checkbox" name="ep3" id="ep3" /> <label for="ep3">Episode 3</label><br />
-	    <input type="checkbox" name="ep4" id="ep4" /> <label for="ep4">Episode 4</label><br />
-	    <input type="checkbox" name="ep5" id="ep5" /> <label for="ep5">Episode 5</label><br />
-	    <input type="checkbox" name="ep6" id="ep6" /> <label for="ep6">Episode 6</label><br />
-	    (Non le 7 et le 8 ne sont pas des vrais Star Wars...)
-    	</p>
-
-    	<p>
-    	<span>Listes déroulantes :</span><br /><br />
-    		<label for="films">Quel est votre moyen préféré de regarder un film ?</label><br />
-            <select name="films" id="films">
-                <optgroup label="Classique">
-                    <option value="cinema">Cinéma</option>
-                    <option value="television">Télévision</option>
-                </optgroup>
-                <optgroup label="Internet">
-                    <option value="streaming" selected>Streaming</option>
-                    <option value="telechargement">Téléchargement</option>
-                </optgroup>
-            </select>
-    	</p>
-    </form>
-
-    <h3>Les boutons d'envois</h3>
-    <form method="post" action="traitement.php">
-	    <p>
-		    <input type="submit" value="Envoyer" /> De type "submit" il déclenche l'attribut "action" du formulaire. (N'ayant pas mis de php, il ne fonctionne pas).
-	    </p>
-	    <p>
-		    <input type="button" value="Envoyer" /> De type "button" il est générique et n'a par défaut aucun effet.
-	    </p>
-	    <p>
-		    <input type="reset" value="reset" /> Peut être proposé pour remettre à zéro un formulaire.
-	    </p>
-    </form>
-
-<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
-  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
-    <div class="contenuSpoiler">
-      <pre><code class="language-markup">
-	&lt;h3&gt;Formulaires classiques&lt;/h3&gt;
-	&lt;p&gt;
-		&lt;ul&gt;
-			&lt;li&gt;Le "id" de "input" est relié au "for" du "label".&lt;/li&gt;
-		    &lt;li&gt;le "name" de "input" est destiné à un language comme le PHP.&lt;/li&gt;
-	    &lt;/ul&gt;
-	    Exemple :
-	&lt;/p&gt;
-	&lt;form method="post" action="traitement.php"&gt;
-	&lt;p&gt;Si la saisie ne correspond pas au format indiqué dans l'input avec "type", le navigateur le signale et bloque l'envoi du formulaire.&lt;br /&gt;&lt;br /&gt;
-	La balise "fieldset" permet de regrouper les champs et la balise "legend" de donner un titre à ces regroupements.
-		&lt;fieldset&gt;
-			&lt;legend&gt;Vos coordonnées&lt;/legend&gt;
-
-        &lt;label for="pseudo"&gt;Votre pseudo :&lt;/label&gt;&lt;br /&gt;
-        &lt;input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" /&gt;
-       
-        &lt;br /&gt;
-        &lt;label for="pass"&gt;Votre mot de passe :&lt;/label&gt;&lt;br /&gt;
-        &lt;input type="password" name="pass" id="pass" placeholder="Votre MdP"/&gt;
-
-        &lt;br /&gt;
-        &lt;label for="email"&gt;Votre email :&lt;/label&gt;&lt;br /&gt;
-        &lt;input type="email" name="email" id="email" placeholder="aursmj@gmail.com"&gt;
-
-        &lt;br /&gt;
-        &lt;label for="url"&gt;Votre site web :&lt;/label&gt;&lt;br /&gt;
-		&lt;input type="url" name="url" id="url" placeholder="SMAB.fr" &gt;
-
-		&lt;br /&gt;
-		&lt;label for="tel"&gt;Votre numéro :&lt;/label&gt;&lt;br /&gt;
-		&lt;input type="tel" name="tel" id="tel" placeholder="0601020304"&gt;
-
-		&lt;/fieldset&gt;
-
-		&lt;br /&gt;
-		&lt;label for="search"&gt;Rechercher :&lt;/label&gt;&lt;br /&gt;
-		&lt;input type="search" name="search" id="search" /&gt;
-
-		&lt;br /&gt;&lt;br /&gt;
-		L'attribut required, rend la saisie obligatoire et l'attribut autofocus pour y positionner le curseur dès l'ouverture de la page.
-	&lt;/p&gt;
-&lt;/form&gt;
-
-    &lt;h3&gt;Formulaires spéciaux&lt;/h3&gt;
-    &lt;form method="post" action="traitement.php"&gt;
-    	&lt;p&gt;
-    	    &lt;label for="prez"&gt;Présentez-vous brièvement :&lt;/label&gt;&lt;br /&gt;
-		    &lt;textarea name="prez" id="prez" rows="10" cols="50" placeholder="Les attributs rows et cols définissent la taille de la zone de saisie par défaut"&gt;&lt;/textarea&gt;
-
-		    &lt;br /&gt;
-		    &lt;label for="number"&gt;Choisir un nombre pair entre 10 et 20 :&lt;/label&gt;&lt;br /&gt;
-		    &lt;input type="number" name="number" id="number" min="10" max="20" step="2" /&gt;
-
-		    &lt;br /&gt;
-		    &lt;label for="range"&gt;Déplacez le curseur :&lt;/label&gt;
-		    &lt;input type="range" name="range" id="range" class="style_input" /&gt;
-
-		    &lt;br /&gt;
-		    &lt;label for="color"&gt;Choisissez une couleur :&lt;/label&gt;
-		    &lt;input type="color" name="color" id="color" class="style_input" /&gt;
-        &lt;/p&gt;
-    &lt;/form&gt;
-    
-    &lt;h3&gt;Formulaires dates et horaires&lt;/h3&gt;
-    &lt;form method="post" action="traitement.php"&gt;
-    	&lt;p&gt;
-    	&lt;fieldset&gt;
-    		&lt;legend&gt;Date & time&lt;/legend&gt;
-
-    		&lt;label for="date"&gt;date&lt;/label&gt;
-		    &lt;input type="date" name="date" id="date" /&gt;
-    	&lt;/p&gt;
-    	&lt;p&gt;
-		    &lt;label for="time"&gt;time&lt;/label&gt;
-		    &lt;input type="time" name="time" id="time" /&gt;
-	    &lt;/p&gt;
-	    &lt;p&gt;
-		    &lt;label for="week"&gt;week&lt;/label&gt;
-		    &lt;input type="week" name="week" id="week" /&gt;
-	    &lt;/p&gt;
-	    &lt;p&gt;
-	    	&lt;label for="month"&gt;month&lt;/label&gt;
-		    &lt;input type="month" name="month" id="month" /&gt;
-	    &lt;/p&gt;
-	    &lt;p&gt;
-		    &lt;label for="datetime"&gt;datetime&lt;/label&gt;
-		    &lt;input type="datetime" name="datetime" id="datetime" /&gt;
-	    &lt;/p&gt;
-	    &lt;p&gt;
-		    &lt;label for="datetime-local"&gt;datetime-local&lt;/label&gt;
-		    &lt;input type="datetime-local" name="datetime-local" id="datetime-local" /&gt;
-
-		&lt;/fieldset&gt;
-	    &lt;/p&gt;
-    &lt;/form&gt;
-
-    &lt;h3&gt;Les questionnaires&lt;/h3&gt;
-    &lt;form method="post" action="traitement.php"&gt;
-    	&lt;p&gt;
-    	&lt;span&gt;Zones d'options, un seul choix possible :&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;
-    	Votre univers préféré :&lt;br /&gt;
-        &lt;input type="radio" name="univers" value="SW" id="SW" checked /&gt; &lt;label for="SW"&gt;Star Wars&lt;/label&gt; . . . . . . . (En rajoutant l'attribut checked, la case est pré-cochée. Cet attribut n'a pas besoin de valeur.)&lt;br /&gt;
-        &lt;input type="radio" name="univers" value="HP" id="HP" /&gt; &lt;label for="HP"&gt;Harry Potter&lt;/label&gt; &lt;br /&gt;
-        &lt;input type="radio" name="univers" value="LotR" id="LotR" /&gt; &lt;label for="LotR"&gt;Lord of the Ring&lt;/label&gt; &lt;br /&gt;
-        &lt;input type="radio" name="univers" value="Ma" id="Ma" /&gt; &lt;label for="Ma"&gt;Marvel&lt;/label&gt;
-    	&lt;/p&gt;
-
-    	&lt;p&gt;
-    	&lt;span&gt;Cases à cocher, plusieurs choix possibles :&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;
-    	Vos épisodes préférés :&lt;br /&gt;
-	    &lt;input type="checkbox" name="ep1" id="ep1" /&gt; &lt;label for="ep1"&gt;Episode 1&lt;/label&gt;&lt;br /&gt;
-	    &lt;input type="checkbox" name="ep2" id="ep2" /&gt; &lt;label for="ep2"&gt;Episode 2&lt;/label&gt;&lt;br /&gt;
-	    &lt;input type="checkbox" name="ep3" id="ep3" /&gt; &lt;label for="ep3"&gt;Episode 3&lt;/label&gt;&lt;br /&gt;
-	    &lt;input type="checkbox" name="ep4" id="ep4" /&gt; &lt;label for="ep4"&gt;Episode 4&lt;/label&gt;&lt;br /&gt;
-	    &lt;input type="checkbox" name="ep5" id="ep5" /&gt; &lt;label for="ep5"&gt;Episode 5&lt;/label&gt;&lt;br /&gt;
-	    &lt;input type="checkbox" name="ep6" id="ep6" /&gt; &lt;label for="ep6"&gt;Episode 6&lt;/label&gt;&lt;br /&gt;
-	    (Non le 7 et le 8 ne sont pas des vrais Star Wars...)
-    	&lt;/p&gt;
-
-    	&lt;p&gt;
-    	&lt;span&gt;Listes déroulantes :&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;
-    		&lt;label for="films"&gt;Quel est votre moyen préféré de regarder un film ?&lt;/label&gt;&lt;br /&gt;
-            &lt;select name="films" id="films"&gt;
-                &lt;optgroup label="Classique"&gt;
-                    &lt;option value="cinema"&gt;Cinéma&lt;/option&gt;
-                    &lt;option value="television"&gt;Télévision&lt;/option&gt;
-                &lt;/optgroup&gt;
-                &lt;optgroup label="Internet"&gt;
-                    &lt;option value="streaming" selected&gt;Streaming&lt;/option&gt;
-                    &lt;option value="telechargement"&gt;Téléchargement&lt;/option&gt;
-                &lt;/optgroup&gt;
-            &lt;/select&gt;
-    	&lt;/p&gt;
-    &lt;/form&gt;
-
-    &lt;h3&gt;Les boutons d'envois&lt;/h3&gt;
-    &lt;form method="post" action="traitement.php"&gt;
-	    &lt;p&gt;
-		    &lt;input type="submit" value="Envoyer" /&gt; De type "submit" il déclenche l'attribut "action" du formulaire. (N'ayant pas mis de php, il ne fonctionne pas).
-	    &lt;/p&gt;
-	    &lt;p&gt;
-		    &lt;input type="button" value="Envoyer" /&gt; De type "button" il est générique et n'a par défaut aucun effet.
-	    &lt;/p&gt;
-	    &lt;p&gt;
-		    &lt;input type="reset" value="reset" /&gt; Peut être proposé pour remettre à zéro un formulaire.
-	    &lt;/p&gt;
-    &lt;/form&gt;
-      </code></pre>
-    </div>
-</div>
-
-</div>
-<div class="feuille_blanche_suite">
-	<h2>La musique et la vidéo</h2>
-	<h3>La musique</h3>
-	<p>
-		Les formats AAC et OGG sont de meilleure qualité que le MP3, qui, lui, a l'avantage d'être reconnu par tous les navigateurs. Il est plus prudent de laisser le choix au navigateur.
-	</p>
-	<audio src="../data/X_Ambassadors-Devil.mp3" controls preload="auto">Si le lecteur ne marche pas, voici le <a href="https://soundcloud.com/x-ambassadors/the-devil-you-know">lien</a>.</audio>
-
-	<h3>La vidéo</h3>
-	<p>Les iPhone, iPad et iPod ne reconnaissent encore que le format H.264 (.mp4) et seulement s'il est en premier dans la liste des sources !!</p>
-	<video controls poster="../data/poster_kold.png" preload="auto" width="500">
-		<source src="../data/kold_2016.mp4">
-	</video>
-<br /><br />
-<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
-  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
-    <div class="contenuSpoiler">
-      <pre><code class="language-markup">
-&lt;h3&gt;La musique&lt;/h3&gt;
-&lt;p&gt;
-	Les formats AAC et OGG sont de meilleur qualités que le MP3 mais il a l'avantage d'être reconnu par tous les navigateurs. Il est plus prudent de laisser le choix au navigateur.
-&lt;/p&gt;
-&lt;audio src="../data/X_Ambassadors-Devil.mp3" controls preload="auto"&gt;Si le lecteur ne marche pas, voici le &lt;a href="https://soundcloud.com/x-ambassadors/the-devil-you-know"&gt;lien&lt;/a&gt;.&lt;/audio&gt;
-
-&lt;h3&gt;La vidéo&lt;/h3&gt;
-&lt;p&gt;Les iPhone, iPad et iPod ne reconnaissent encore que le format H.264 (.mp4) et seulement s'il est en premier dans la liste des sources !!&lt;/p&gt;
-&lt;video controls poster="../data/poster_kold.png" preload="auto" width="500"&gt;
-	&lt;source src="../data/kold_2016.mp4"&gt;
-&lt;/video&gt;
-      </code></pre>
-    </div>
-</div>
-
-</div>
-
-<div class="feuille_blanche_suite_ancre">
-	<h2 id="fin_page">Ancre de fin de page</h2>
-	<p>Remonter au <a href="#debut_page">début de la page</a></p>
-
-<div class="spoiler_img" onclick="ouvrirFermerSpoiler(this);">
-  <img src="../data/bouton_spoiler.png" alt="afficher spoiler" /> <p class="txt_bouton_spoiler">Cliquez pour afficher le code</p>
-    <div class="contenuSpoiler">
-      <pre><code class="language-markup">
-&lt;h2 id="fin_page"&gt;Ancre de fin de page&lt;/h2&gt;
-&lt;p&gt;Remonter au &lt;a href="#debut_page"&gt;début de la page&lt;/a&gt;&lt;/p&gt;
-      </code></pre>
-    </div>
-</div>
-
-</div>
-
-
-
-	</body>
+    </body>
 
 </html>
