@@ -1,0 +1,150 @@
+/* feuille de style du cours Frk Flexbox */
+
+/* DÉBUT - header */
+
+#header
+{
+	min-width: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: #8C76CC;
+	font-weight: bolder;
+	color: #583CAD;
+	font-size: 3em; 
+}
+
+/* FIN - header */
+
+
+/* DÉBUT - menu principal */
+
+#menu_principal
+{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #BDBDBD;
+	padding: 5px;
+}
+
+.bouton_menu_principal
+{
+	width: 30%;
+	min-width: 200px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 5px;
+	background-color: #A4A4A4;
+	border-radius: 20px;
+}
+
+/* FIN - menu principal */
+
+
+/* DÉBUT - gestion menu 2nd + articles + pub */
+
+#NavArtPub
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* FIN - gestion menu 2nd + articles + pub */
+
+
+
+/* DÉBUT - menu secondaire */
+
+#menu_secondaire
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items:center;
+	flex: 1;
+	min-width: 150px;
+	background-color: #A9D0F5;
+	padding: 5px;
+}
+.bouton_menu_secondaire
+{
+	width: 90%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin: 3px;
+	background-color: #5882FA;
+	color: white;
+	border-radius: 20px;
+}
+
+/* FIN - menu secondaire */
+
+
+/* DÉBUT - articles */
+
+#les_articles
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex: 7;
+	min-width: 320px;
+	background-color: #CEF6CE;
+	
+}
+article
+{
+	border: solid 10px gray;
+	border-radius: 20px;
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* FIN - articles */
+
+
+/* DÉBUT - aside Pub */
+
+#les_aside_pub
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex: 2;
+	min-width: 320px;
+	background-color: #F1CD62;
+	
+
+}
+.une_pub
+{
+	background-color: #E2AC08;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* FIN - aside Pub */
+
+
+/* DÉBUT - footer */
+#footer
+{
+	min-width: 200px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	background-color: #424345;
+	color: white;
+}
+
+/* FIN - footer */
+
